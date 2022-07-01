@@ -27,6 +27,9 @@ class PasswordForm extends React.Component {
 
     handleChange(event) {
         this.setState({value: event.target.value});
+        if(!this.state.value){
+            this.setState({passwordIsShown: false,})
+        }
     }
 
     handleSubmit(event) {
@@ -38,6 +41,16 @@ class PasswordForm extends React.Component {
     toggleText() {
         console.log("you toggled text to " + !this.state.passwordIsShown);
         this.setState({passwordIsShown: !this.state.passwordIsShown});
+    }
+
+    renderToggleTextButton() {
+        if(this.state.value){
+            return(
+                <div className='Password Toggle-text-button-placeholder flex'>
+                    <ShowButton className='Password Toggle-text-button flex' onClick={()=>this.toggleText()}></ShowButton>
+                </div>
+            );
+        }
     }
 
     render() {
@@ -55,9 +68,7 @@ class PasswordForm extends React.Component {
                             placeholder='Password'>
                             </input>
                         </form>
-                        <div className='Password Toggle-text-button-placeholder flex'>
-                            <ShowButton className='Password Toggle-text-button flex' onClick={()=>this.toggleText()}></ShowButton>
-                        </div>
+                        {this.renderToggleTextButton()}
                     </div>
                 </div>
             </>
