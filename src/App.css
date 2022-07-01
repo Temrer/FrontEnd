@@ -24,15 +24,57 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Password {
+  text-align: left;
+  border-radius:  25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Password.holder {
+  display: flex;
+  flex-direction: row;
+}
+
+.Password.flex {
+  text-align: left;
+  flex: 1;
+  margin-right: 10px;
+  border: 2px;
+  border-color: #ee3102;
+}
+
+.Password.flex.form {
+  text-indent:  5px;
+}
+
+.Password.label {
+  text-align: start;
+  border-radius: 10px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-color: #181b22;
+  border-style: solid;
+  background-color: #181b22;
+}
+
+::placeholder {
+  text-align: left;
+  text-indent: 5px;
+}
+
+.Toggle-text-button {
+  background-color: #181b22;
+  padding: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  color: #ffffff;
+}
+.Toggle-text-button:hover {
+  background-color: #363d4d;
+  padding: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-width: 3px;
+  border-color: #181b22;
+  border-style: inset;
+  cursor: pointer;
 }
