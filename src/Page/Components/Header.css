@@ -1,0 +1,92 @@
+.Main-Header{
+    --darkblue: #43727a;
+    --lightblue: #4ddde0;
+    background-color: var(--darkblue);
+    box-shadow: 0px 3px 3px rgba(34, 57, 61, 0.863);
+    height: 60px;
+    display: flex;
+    text-align: left;
+    align-items: left;
+  }
+  
+  
+  #topBannerLogo-placeholder{
+    background-color: #fff;
+    /* box-shadow: 0px 1px 5px rgba(34, 57, 61, 0.918) inset; */
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-top: 2px;
+  }
+  
+  #BannerLogo {
+    height: 40px;
+    width: 40px;
+    margin: 3px;
+  }
+    
+  .searchbarInput{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 13px;
+    border: 0px;
+    outline:none; 
+    box-shadow:none;
+  }
+
+  .searchbarInput:focus{
+    border: 0px;
+    outline:none;
+    box-shadow: none;
+  }
+
+  .ie{
+    display: flex;
+  }
+
+  .Right{
+    flex-direction: row-reverse;
+  }
+
+  .ie.Right{
+    width: 100%;
+  }
+
+  #test{
+    background-color: #fff;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+  }
+
+  .UserUtil{
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .UserUtil:first-child{
+    margin-right: 20px;
+  }
+
+  .UserUtil-Group{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .UserUtil-Group img{
+    width: 25px;
+    height: 25px;
+    margin: 7px;
+  }
+  
+  #ProfileText{
+    font-size: 30px;
+    font-weight:600;
+  }
+  
